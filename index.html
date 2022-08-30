@@ -4,113 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3D Print - Аддитивные технологии в Оренбурге</title>
-    <meta
-      name="description"
-      content="Услуги 3Д печати по лучшим ценам в Оренбурге. Большой парк оборудования"
-    />
-    <meta name="keywords" content="3D, принтер, печать, моделирование" />
-
+    <title>Поиск Google</title>
     <style>
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      .container {
-        max-width: 730px;
-        margin: 0 auto;
-        padding: 0 15px;
-      }
-      .menu__list {
-        list-style: none;
+      * {
+        box-sizing: border-box;
         padding: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
+        margin: 0;
       }
-      .menu__link {
-        padding: 10px 20px;
-        transition: all 0.3s ease-in;
-      }
-      .menu__link:hover {
-        color: #ffffff;
-        background-color: #00000099;
-      }
-      .content__head {
-        margin-top: 3.5rem;
-        text-align: center;
-        color: #000000aa;
-      }
-      .content__title {
-        margin-top: 3rem;
-        color: #00000099;
-      }
-      .content__paragraph {
-        text-align: justify;
-      }
-      .list {
-        list-style: square;
-      }
-      .content__img {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
+      .search-form {
+        width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        outline: #e39ff6 solid 5px;
+        gap: 10px;
+        background-color: #a32cc4;
+      }
+      .search-form:focus {
+        border: #e39ff6 solid 5px;
+      }
+      .search-form__input {
+        padding: 7px 15px;
+        border: none;
+      }
+      .search-form__btn {
+        padding: 7px 15px;
+        border: none;
+        background-color: #e39ff6;
+        color: #000;
+        font-weight: 700;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./printers.html">Принтеры</a>
-            </li>
-          </ul>
-        </nav>
+    <form class="search-form" action="https://google.com/search">
+      <div class="search-form__item">
+        <input
+          class="search-form__input"
+          placeholder="Поиск"
+          type="text"
+          name="q"
+        />
       </div>
-    </header>
-    <main class="content">
-      <div class="container">
-        <h1 class="content__head">Услуги 3D печати</h1>
-        <h2 class="content__title">Что такое 3D печать?</h2>
-        <p class="content__paragraph">
-          3D-печать – это методика изготовления объемных изделий на основе
-          цифровых моделей. Независимо от конкретной технологии, суть процесса
-          заключается в постепенном послойном воспроизведении объектов.
-        </p>
-        <p class="content__paragraph">
-          В этом процессе применяется особое устройство – 3D принтер, который
-          печатает определенными видами материалов. Более подробно о нем
-          написано здесь. Другие названия технологии – быстрое прототипирование
-          или аддитивное производство. Часто словосочетание «аддитивные
-          технологии» используется в значении «3D технологии».
-        </p>
-        <h2 class="content__title">Для чего используется?</h2>
-        <ul class="list">
-          <li class="list__item">Стоматология</li>
-          <li class="list__item">Стоматология</li>
-          <li class="list__item">Архитектура</li>
-          <li class="list__item">Ювелирное дело</li>
-          <li class="list__item">Мода</li>
-        </ul>
-        <div class="content__img">
-          <img
-            class=""
-            src="img/3d-print.jpg"
-            alt="Распечатанная модель"
-            width="1024"
-            height="560"
-          />
-        </div>
-      </div>
-    </main>
+      <button class="btn search-form__btn" type="submit">
+        Искать в Google
+      </button>
+    </form>
   </body>
 </html>
