@@ -10,47 +10,107 @@
       content="Услуги 3Д печати по лучшим ценам в Оренбурге. Большой парк оборудования"
     />
     <meta name="keywords" content="3D, принтер, печать, моделирование" />
+
+    <style>
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .container {
+        max-width: 730px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .menu__list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+      .menu__link {
+        padding: 10px 20px;
+        transition: all 0.3s ease-in;
+      }
+      .menu__link:hover {
+        color: #ffffff;
+        background-color: #00000099;
+      }
+      .content__head {
+        margin-top: 3.5rem;
+        text-align: center;
+        color: #000000aa;
+      }
+      .content__title {
+        margin-top: 3rem;
+        color: #00000099;
+      }
+      .content__paragraph {
+        text-align: justify;
+      }
+      .list {
+        list-style: square;
+      }
+      .content__img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html">Главная</a>
-          </li>
-          <li>
-            <a href="./printers.html">Принтеры</a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./printers.html">Принтеры</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <h1>Услуги 3D печати</h1>
-    <h2>Что такое 3D печать?</h2>
-    <p>
-      3D-печать – это методика изготовления объемных изделий на основе цифровых
-      моделей. Независимо от конкретной технологии, суть процесса заключается в
-      постепенном послойном воспроизведении объектов.
-    </p>
-    <p>
-      В этом процессе применяется особое устройство – 3D принтер, который
-      печатает определенными видами материалов. Более подробно о нем написано
-      здесь. Другие названия технологии – быстрое прототипирование или
-      аддитивное производство. Часто словосочетание «аддитивные технологии»
-      используется в значении «3D технологии».
-    </p>
-    <h2>Для чего используется?</h2>
-    <ul>
-      <li>Стоматология</li>
-      <li>Стоматология</li>
-      <li>Архитектура</li>
-      <li>Ювелирное дело</li>
-      <li>Мода</li>
-    </ul>
-    <img
-      src="img/3d-print.jpg"
-      alt="Распечатанная модель"
-      width="1024"
-      height="560"
-    />
+    <main class="content">
+      <div class="container">
+        <h1 class="content__head">Услуги 3D печати</h1>
+        <h2 class="content__title">Что такое 3D печать?</h2>
+        <p class="content__paragraph">
+          3D-печать – это методика изготовления объемных изделий на основе
+          цифровых моделей. Независимо от конкретной технологии, суть процесса
+          заключается в постепенном послойном воспроизведении объектов.
+        </p>
+        <p class="content__paragraph">
+          В этом процессе применяется особое устройство – 3D принтер, который
+          печатает определенными видами материалов. Более подробно о нем
+          написано здесь. Другие названия технологии – быстрое прототипирование
+          или аддитивное производство. Часто словосочетание «аддитивные
+          технологии» используется в значении «3D технологии».
+        </p>
+        <h2 class="content__title">Для чего используется?</h2>
+        <ul class="list">
+          <li class="list__item">Стоматология</li>
+          <li class="list__item">Стоматология</li>
+          <li class="list__item">Архитектура</li>
+          <li class="list__item">Ювелирное дело</li>
+          <li class="list__item">Мода</li>
+        </ul>
+        <div class="content__img">
+          <img
+            class=""
+            src="img/3d-print.jpg"
+            alt="Распечатанная модель"
+            width="1024"
+            height="560"
+          />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
